@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "41572d7927d04ab7fc9431d222469432"
+name = "wishlist-pf-01"
+handle = "wishlist-pf-01"
+application_url = "https://remedies-taiwan-acknowledge-pdt.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "cofaria-01.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://remedies-taiwan-acknowledge-pdt.trycloudflare.com/auth/callback",
+  "https://remedies-taiwan-acknowledge-pdt.trycloudflare.com/auth/shopify/callback",
+  "https://remedies-taiwan-acknowledge-pdt.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
